@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.config.js"
+    "test": "karma start karma.config.js",
+    "lint": "eslint src/**/*.js tests/**/*.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^2.11.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-cli": "^1.0.0",

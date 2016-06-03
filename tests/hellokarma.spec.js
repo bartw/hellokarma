@@ -5,8 +5,7 @@ describe('hellokarma', function() {
 
     describe('object', function() {
         it('reverse', function() {
-            var hk = new HelloKarma();
-            expect(hk.reverse('reverse')).toBe('esrever');
+            expect(hellokarma.reverse('reverse')).toBe('esrever');
         });
     });
 });
