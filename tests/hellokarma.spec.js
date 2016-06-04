@@ -1,3 +1,5 @@
+'use strict';
+
 var hellokarma = require('../src/hellokarma');
 
 describe('hellokarma', function() {

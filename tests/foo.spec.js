@@ -1,3 +1,5 @@
+'use strict';
+
 var foo = require('../src/foo');
 
 describe('foo', function() {

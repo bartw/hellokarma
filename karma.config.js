@@ -12,7 +12,13 @@ module.exports = function(config) {
         autoWatchBatchDelay: 300,
         files: ['./tests/index.js'],
         preprocessors: { './tests/index.js': ['webpack'] },
-        webpack: {},
+        webpack: {
+            module: {
+                loaders: [
+                    { test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/ }
+                ]
+            }
+        },
         webpackMiddleware: { noInfo: true }
     });
 };

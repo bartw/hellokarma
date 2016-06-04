@@ -1,9 +1,15 @@
 {
     "env": {
-        "browser": true
+        "browser": true,
+        "commonjs": true,
+        "jasmine": true
     },
     "extends": "eslint:recommended",
     "rules": {
+        "strict": [
+            2,
+            "global"
+        ],
         "indent": [
             "error",
             4
