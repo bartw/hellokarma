@@ -7,3 +7,5 @@ var hellokarma = (function HelloKarmaModule() {
         reverse: reverse
     };
 })();
+
+module.exports = hellokarma;

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start karma.config.js",
-    "lint": "eslint src/**/*.js tests/**/*.js"
+    "lint": "eslint src/**/*.js tests/**/*.js",
+    "build": "webpack ./src/**/*.js bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "karma-cli": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0",
-    "phantomjs-prebuilt": "^2.1.7"
+    "karma-webpack": "^1.7.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "webpack": "^1.13.1"
   }
 }

@@ -10,9 +10,9 @@ module.exports = function(config) {
         browsers: ['PhantomJS'],
         singleRun: false,
         autoWatchBatchDelay: 300,
-        files: [
-            './src/**/*.js',
-            './tests/**/*.spec.js'
-        ]
+        files: ['./tests/index.js'],
+        preprocessors: { './tests/index.js': ['webpack'] },
+        webpack: {},
+        webpackMiddleware: { noInfo: true }
     });
-}
+};

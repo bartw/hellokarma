@@ -7,3 +7,5 @@ var foo = (function FooModule() {
         uppercase: uppercase
     };
 })();
+
+module.exports = foo;
