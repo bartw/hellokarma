@@ -4,7 +4,7 @@
         "commonjs": true,
         "jasmine": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "angular"],
     "rules": {
         "strict": [
             2,
@@ -25,6 +25,7 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "angular/dumb-inject": 2
     }
 }

@@ -11,12 +11,15 @@ module.exports = function(config) {
         singleRun: false,
         autoWatchBatchDelay: 300,
         files: ['./tests/index.js'],
-        preprocessors: { './tests/index.js': ['webpack'] },
+        preprocessors: { './tests/index.js': ['webpack', 'sourcemap'] },
         webpack: {
-            module: {
-                loaders: [
-                    { test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/ }
-                ]
+            devtool: 'inline-source-map',
+            module: {                
+                loaders: [{
+                    test: /\.js$/,
+                    loader: "eslint-loader",
+                    exclude: /node_modules/
+                }]
             }
         },
         webpackMiddleware: { noInfo: true }
